@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+h1,h2,h3{
+    padding: 0;
+
+}
+
+p{
+
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+
+.biowrapper{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bio{
+    width: 50%;
+}
+
+
+.profilepic{
+    width: 600px;
+    height: 450px;
+}
+
+.learning{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.learningcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education{
+    margin: 30px;
+}
+
+.experience{
+    margin:30px
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.workcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: aqua;
+    width:300px;
+}
