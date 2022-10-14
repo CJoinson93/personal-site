@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
 body{
     width: 100%;
     margin: 0;
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 h1,h2,h3{
@@ -12,14 +16,28 @@ h1,h2{
     margin-bottom: 30px;
 }
 
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 22px;
+    margin-bottom:5px;
+}
+
 header{
     text-align: center;
     width: 100%;
     height: 200px;
-    background-color: aqua;
+    background-color: #EBFCFB;
     padding-top: 50px;
 }
 
+#me{
+    width: 200px;
+    height: 200px;
+    padding: 60px;
+}
 
 .biowrapper{
     display: flex;
@@ -32,7 +50,7 @@ header{
 .bio{
     width: 800px;
     margin: 40px 30px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -50,15 +68,59 @@ header{
 
 }
 
-.learningcontent{
+.edu-content{
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 10px;
     padding: 20px;
     text-align: center;
-    width: 300px;
-    background-color: aqua;
+    width: 350px;
+    background-color: #3BAB87;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.8s;
+}
+
+:hover.edu-content{
+    background-color: #EB5160;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.8s;
+}
+
+.prof-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    background-color: #224A54;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.8s;
+}
+
+:hover.prof-content{
+    background-color: #EB5160;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.8s;
+}
+
+.subject{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.school{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.date{
+    font-size: 15px;
+    font-style: italic;
 }
 
 .experience{
@@ -74,16 +136,6 @@ header{
     flex-wrap: wrap;
 }
 
-.workcontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: aqua;
-    width:300px;
-}
 
 .skills{
     margin: 40px 30px 10px;
@@ -105,6 +157,133 @@ header{
     margin: 10px;
     padding: 20px;
     text-align: center;
-    background-color: aqua;
+    background-color: #C1605C;
     width:300px;
+}
+
+.skill-meter{
+    width: 100%;
+    height:10px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.figma-meter{
+    width:85%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.ux-meter{
+    width:80%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.graphic-meter{
+    width:70%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.video-meter{
+    width:55%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.html-meter{
+    width:60%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.css-meter{
+    width:70%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.ms-meter{
+    width:96%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.adobe-meter{
+    width:70%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.wp-meter{
+    width:90%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.com-meter{
+    width:95%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.del-meter{
+    width:90%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.cw-meter{
+    width:70%;
+    height: 100%;
+    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.projects{
+    margin: 40px 30px 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.recent-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: aqua;
+    width:500px;
 }
