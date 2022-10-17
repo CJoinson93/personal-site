@@ -345,7 +345,7 @@ a{
 .projects{
     margin: 40px 30px 10px;
     padding: 50px;
-    text-align: left;
+    text-align: center;
     border: solid #F4F4F6 1px;
     border-radius: 10px;
     background: linear-gradient(60deg, #e3ffe7 0%, #d9e7ff 100%);
@@ -353,18 +353,19 @@ a{
 
 .recent-projects{
     display: flex;
-    flex-direction: row;
-    justify-content:start;
+    flex-direction: column;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
 .project{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    text-align: left;
-    width:50%;
+    text-align: center;
+    width:450px;
+    margin: auto;
 }
 
 .ProtoButton{
