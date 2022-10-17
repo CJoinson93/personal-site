@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
+html{ 
+    scroll-behavior: smooth; 
+} 
+
 body{
     width: 100%;
     margin: 0;
@@ -35,15 +39,15 @@ header{
     text-align: left;
     width: 100%;
     margin:0;
-    height: 100px;
-    padding: 20px 20px 20px 40px;
+    height: 30px;
+    padding: 20px 0px 20px 0px;
     background-color: #EBFCFB;
 }
 
 .nav-menu{
     display: flex;
     flex-direction: row;
-    justify-content:start;
+    justify-content:left;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -51,7 +55,29 @@ header{
 ul{
     display: inline;
     text-align: center;
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #022F40;    
+}
+
+ul a{
+    text-decoration: none;
+    transition: 0.8s;
+    color: #022F40;
+}
+
+ul a:hover{
+    color: #0090C1;
+    transition: 0.8s;
+    border-bottom: solid 2px #0090C1;
+}
+
+a{
+    /*display: block;*/
+    padding: 10px;
+    margin-left:40px;
 }
 
 #me{
@@ -59,8 +85,6 @@ ul{
     height: 200px;
     z-index: 5;
 }
-
-
 
 .biowrapper{
     display: flex;
@@ -75,12 +99,18 @@ ul{
     padding: 50px;
     border: solid #F4F4F6 1px;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
-.hi{
+.para-one{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#hi-scroll{
     margin-left:0px;
 }
 
@@ -90,7 +120,7 @@ ul{
     padding: 50px;
     border: solid #F4F4F6 1px;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
@@ -117,7 +147,7 @@ ul{
 }
 
 :hover.edu-content{
-    background-color: #EB5160;
+    background-color: #0090C1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.8s;
 }
@@ -137,7 +167,7 @@ ul{
 }
 
 :hover.prof-content{
-    background-color: #EB5160;
+    background-color: #0090C1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.8s;
 }
@@ -160,7 +190,7 @@ ul{
 .experience{
     margin: 40px 30px 10px;
     padding: 50px;
-    text-align: left;
+    text-align: center;
     border: solid #F4F4F6 1px;
     border-radius: 10px;
     background: linear-gradient(0deg, #e3ffe7 0%, #d9e7ff 100%);
@@ -177,7 +207,7 @@ ul{
 .skills{
     margin: 40px 30px 10px;
     padding: 50px;
-    text-align: left;
+    text-align: center;
     border: solid #F4F4F6 1px;
     border-radius: 10px;
     background: linear-gradient(60deg, #e3ffe7 0%, #d9e7ff 100%);
@@ -203,6 +233,12 @@ ul{
     width:350px;
 }
 
+:hover.skill{
+    background-color: #0090C1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.8s;
+}
+
 .skill-meter{
     width: 100%;
     height:10px;
@@ -213,7 +249,7 @@ ul{
 .figma-meter{
     width:85%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);;
     border: solid 0px;
     border-radius: 10px;
 }
@@ -221,7 +257,7 @@ ul{
 .ux-meter{
     width:80%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -229,7 +265,7 @@ ul{
 .graphic-meter{
     width:80%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -237,7 +273,7 @@ ul{
 .video-meter{
     width:70%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -245,7 +281,7 @@ ul{
 .html-meter{
     width:80%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -253,7 +289,7 @@ ul{
 .css-meter{
     width:80%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -261,7 +297,7 @@ ul{
 .ms-meter{
     width:96%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -269,7 +305,7 @@ ul{
 .adobe-meter{
     width:80%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -277,7 +313,7 @@ ul{
 .wp-meter{
     width:90%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -285,7 +321,7 @@ ul{
 .com-meter{
     width:95%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -293,7 +329,7 @@ ul{
 .del-meter{
     width:90%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -301,7 +337,7 @@ ul{
 .cw-meter{
     width:70%;
     height: 100%;
-    background: linear-gradient(90deg,  #daae51 0%, #d53369 100%);
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
     border: solid 0px;
     border-radius: 10px;
 }
@@ -332,9 +368,16 @@ ul{
 }
 
 .ProtoButton{
-    background: none;
-    border: 2px solid #EB5160;
+    background-color: #0090C1;
+    border: none;
     height:40px;
     width:100%;
+    transition: 0.8s;
+    color: white;
 
+}
+
+:hover.ProtoButton{
+    transition: 0.8s;
+    background-color: #022F40;
 }
