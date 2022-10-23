@@ -11,17 +11,28 @@
 <body>
 
     <Header> 
-            <div class="nav-menu">
                 <nav>
+                    <h3 id="logo">Chris Joinson</h3>
+                    <img class="hamburger" onclick="showDiv()" src="Images/hamburger.svg" alt="hamburger" value="Show Div">
+                </nav>
+
+                <div id="nav-menu">
                     <ul><a href="#hi-scroll">About</a></ul>
                     <ul><a href="#education-scroll">Education</a></ul>
                     <ul><a href="#prof-scroll">Experience</a></ul>
                     <ul><a href="#skills-scroll">Skills</a></ul>
-                    <ul><a href="#projects-scroll">Projects</a></ul>
-                    <ul><a href="mailto:chrisjoinson93@gmail.com">Contact</a></ul>
-                </nav>
-            </div>
+                    <ul><a href="#project-scroll">Projects</a></ul>
+                </div>
+
+                <section class="heroContainer">
+                    <div class="hero">
+                        <img src="/Images/crackedPlanet.JPG" alt="desert">
+                        <h1 class="headline">I'm a big name in deep space, ask your mates.</h1>
+                    </div>
+                </section>
     </Header>
+
+    <div class="slider"></div>
 
     <div class="biowrapper">
 
@@ -311,6 +322,9 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
