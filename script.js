@@ -12,9 +12,6 @@ tl.fromTo(hero, 1, { height:"0%" }, {height:"80%", ease: Power2.easeInOut})
 .fromTo(logo, 0.5, {opacity:0, x:30}, {opacity: 1, x: 0}, "-=0.5")
 .fromTo(hamburger, 0.5, {opacity:0, x:30}, {opacity: 1, x: 0}, "-=0.5")
 .fromTo(headline, 0.5, {opacity:0,}, {opacity: 1,}, "-=0.5");
-
-//function showDiv(){
-    //document.getElementsByClassName('nav-menu').style.display = block;};
     
 function showDiv(){
     var x = document.getElementById("nav-menu");
